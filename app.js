@@ -6,132 +6,139 @@ var secondNumber = document.querySelector("#second-number")
 var thirdNumber = document.querySelector("#third-number")
 var scoreCheck = document.querySelector("#score-check")
 
-userButton.addEventListener('click',clickHandler)
-function clickHandler(){
+
+var Random
+userButton.addEventListener('click', clickHandler)
+
+function clickHandler() {
     var randomNumber = Math.floor(Math.random() * 5)
-    switch(0){
-        case 0 : {
+    switch (randomNumber) {
+        case 0: {
             showSeries.innerHTML = "4,6,8,10,12";
+            Random = Math.floor(Math.random() * 10)
+            showRandom.innerHTML = Random;
             firstFunction();
             break;
         }
-        case 1 : {
+        case 1: {
             showSeries.innerHTML = "2,6,18,54,324"
+            Random = Math.floor(Math.random() * 10)
+            showRandom.innerHTML = Random;
             secondFunction();
             break;
-        }     
-        case 2 : {
+        }
+        case 2: {
             showSeries.innerHTML = "2,8,32,128,512"
+            Random = Math.floor(Math.random() * 10)
+            showRandom.innerHTML = Random;
             thirdFunction();
             break;
-        } 
-        case 3 : {
+        }
+        case 3: {
             showSeries.innerHTML = "2,20,182,1640,14762"
+            Random = Math.floor(Math.random() * 10)
+            showRandom.innerHTML = Random;
             fourthFunction();
             break;
-        }  
-        case 4 : {
-            showSeries.innerHTML = "100,400,800,1300,1800,"
+        }
+        case 4: {
+            showSeries.innerHTML = "100,400,800,1300,1800"
+            Random = Math.floor(Math.random() * 10)
+            showRandom.innerHTML = Random;
             fifthFunction();
             break;
-        } 
-      
-    }
-}
-function firstFunction(){
-    var firstRandom = Math.floor(Math.random() * 10)
-    showRandom.innerHTML = firstRandom;
-    scoreCheck.addEventListener('click' ,firstHandler(firstRandom))
-}
-function firstHandler(firstRandom){
-    var firstUserNumber = Number(firstNumber.value)
-    var secondUserNumber = Number(secondNumber.value)
-    var thirdUserNumber = Number(thirdNumber.value)
-    var testOne = firstRandom + 2 ;
-    var testTwo = firstRandom + 4 ;
-    var testThree = firstRandom + 6;
+        }
 
-    if(testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber){
-        console.log('Won')
-    }else{
-         console.log('loose')
-     }
     }
-function secondFunction(){
-    var secondRandom = Math.floor(Math.random() * 10)
-    showRandom.innerHTML = secondRandom;
-    scoreCheck.addEventListener('click' ,secondHandler(secondRandom))
+
 }
-function secondHandler(secondRandom){
+
+function firstFunction() {
+    scoreCheck.addEventListener('click', firstHandler)
+}
+
+function firstHandler() {
     var firstUserNumber = Number(firstNumber.value)
     var secondUserNumber = Number(secondNumber.value)
     var thirdUserNumber = Number(thirdNumber.value)
-    var testOne = secondRandom * 3 ;
-    var testTwo = testOne * 3 ;
+    var testOne = Random + 2;
+    var testTwo = Random + 4;
+    var testThree = Random + 6;
+    if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
+        console.log('Won')
+    } else {
+        console.log('loose')
+    }
+}
+
+function secondFunction() {
+    scoreCheck.addEventListener('click', secondHandler)
+}
+
+function secondHandler() {
+    var firstUserNumber = Number(firstNumber.value)
+    var secondUserNumber = Number(secondNumber.value)
+    var thirdUserNumber = Number(thirdNumber.value)
+    var testOne = Random * 3;
+    var testTwo = testOne * 3;
     var testThree = testTwo * 3;
-
-    if(testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber){
-        console.log('won')
-    }else{
-         console.log('loose')
-     }
-    }
-
-function thirdFunction(){
-    var thirdRandom = Math.floor(Math.random() * 10)
-    showRandom.innerHTML = thirdRandom;
-    scoreCheck.addEventListener('click' ,thirdHandler(thirdRandom))
-}
-function thirdHandler(thirdRandom){
-    var firstUserNumber = Number(firstNumber.value)
-    var secondUserNumber = Number(secondNumber.value)
-    var thirdUserNumber = Number(thirdNumber.value)
-    var testOne = thirdRandom *4 ;
-    var testTwo = testOne *4 ;
-    var testThree = testTwo *4;
-
-    if(testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber){
+    if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         console.log('Won')
-    }else{
-         console.log('loose')
-     }
+    } else {
+        console.log('loose')
     }
-function fourthFunction(){
-    var fourthRandom = Math.floor(Math.random() * 10)
-    showRandom.innerHTML = fourthRandom;
-    scoreCheck.addEventListener('click' ,fourthHandler(fourthRandom))
 }
-function fourthHandler(fourthRandom){
+
+function thirdFunction() {
+    scoreCheck.addEventListener('click', thirdHandler)
+}
+
+function thirdHandler() {
     var firstUserNumber = Number(firstNumber.value)
     var secondUserNumber = Number(secondNumber.value)
     var thirdUserNumber = Number(thirdNumber.value)
-    var testOne = (fourthRandom *9)+2 ;
-    var testTwo = (testOne *9)+2;
-    var testThree = (testTwo *9)+2;
-
-    if(testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber){
+    var testOne = Random * 4;
+    var testTwo = testOne * 4;
+    var testThree = testTwo * 4;
+    if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         console.log('Won')
-    }else{
-         console.log('loose')
-     }
+    } else {
+        console.log('loose')
     }
-
-function fifthFunction(){
-    var fifthRandom = Math.floor(Math.random() * 10)
-    showRandom.innerHTML = fifthRandom;
-    scoreCheck.addEventListener('click' ,fifthHandler(fifthRandom))
 }
-function fifthHandler(fifthRandom){
+
+function fourthFunction() {
+    scoreCheck.addEventListener('click', fourthHandler)
+}
+
+function fourthHandler() {
     var firstUserNumber = Number(firstNumber.value)
     var secondUserNumber = Number(secondNumber.value)
     var thirdUserNumber = Number(thirdNumber.value)
-    var testOne = fifthRandom + 300 ;
-    var testTwo = testOne + 400 ;
+    var testOne = (Random * 9) + 2;
+    var testTwo = (testOne * 9) + 2;
+    var testThree = (testTwo * 9) + 2;
+    if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
+        console.log('Won')
+    } else {
+        console.log('loose')
+    }
+}
+
+function fifthFunction() {
+    scoreCheck.addEventListener('click', fifthHandler)
+}
+
+function fifthHandler() {
+    var firstUserNumber = Number(firstNumber.value)
+    var secondUserNumber = Number(secondNumber.value)
+    var thirdUserNumber = Number(thirdNumber.value)
+    var testOne = Random + 300;
+    var testTwo = testOne + 400;
     var testThree = testTwo + 500;
-
-    if(testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber){
+    if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         console.log('Won')
-    }else{
-         console.log('loose')
-     }
+    } else {
+        console.log('loose')
     }
+}
