@@ -1,0 +1,65 @@
+
+body{
+    background-color: wheat;
+}
+h1{
+    margin:auto;
+    padding:1rem ;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+#division{
+    margin: 1rem auto;
+    max-width: 600px;
+    background-color: khaki;
+    padding: 2rem;
+    border-style: solid;
+    border-radius: 0.5rem;
+}
+#show-series{
+    padding: 1rem;
+    color:rgb(0, 0, 0);
+    font-size:x-large;
+    text-align: center;
+    margin: 0.5rem auto;
+    display: block;
+}
+#usr-series{
+    margin: auto;
+    width: fit-content;
+
+}
+#show-random{
+    font-size: x-large;
+    display: inline;
+}
+#first-number{
+    width: 70px;   
+}
+#second-number{
+    width: 70px;
+}
+#third-number{
+    width: 70px;
+}
+#usr-button{
+    padding: 0.5rem 2rem;
+    background-color:rgb(50, 245, 76);
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin:0.5rem auto;
+    display: block;
+}
+#score-check{
+    padding: 0.5rem 2rem;
+    background-color: red;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin:1rem auto;
+    display: block;
+}
