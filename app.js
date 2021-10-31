@@ -4,8 +4,9 @@ var showRandom = document.querySelector("#show-random");
 var firstNumber = document.querySelector("#first-number");
 var secondNumber = document.querySelector("#second-number");
 var thirdNumber = document.querySelector("#third-number");
-var scoreCheck = document.querySelector("#score-check");
-var resultButton = document.querySelector("#result-button");
+var scorebutton = document.querySelector("#score-button");
+var resultShow = document.querySelector("#result-show");
+var scoreShow = document.querySelector("#score-show")
 
 
 var Random;
@@ -13,24 +14,29 @@ userButton.addEventListener('click', clickHandler);
 
 function clickHandler() {
     var randomNumber = Math.floor(Math.random() * 5);
+    firstNumber.value = "";
+    secondNumber.value = "";
+    thirdNumber.value = "";
+    resultShow.innerHTML = "";
     switch (randomNumber) {
         case 0: {
+
             showSeries.innerHTML = "4,6,8,10,12";
-            Random = Math.floor(Math.random() * 100)+50 ;
+            Random = Math.floor(Math.random() * 100) + 50;
             showRandom.innerHTML = Random;
             firstFunction();
             break;
         }
         case 1: {
             showSeries.innerHTML = "2,6,18,54,324";
-            Random = Math.floor(Math.random() * 1000)+350 ;
+            Random = Math.floor(Math.random() * 1000) + 350;
             showRandom.innerHTML = Random;
             secondFunction();
             break;
         }
         case 2: {
             showSeries.innerHTML = "2,8,32,128,512";
-            Random = Math.floor(Math.random() * 1000)+550;
+            Random = Math.floor(Math.random() * 1000) + 550;
             showRandom.innerHTML = Random;
             thirdFunction();
             break;
@@ -44,7 +50,7 @@ function clickHandler() {
         }
         case 4: {
             showSeries.innerHTML = "100,400,800,1300,1800";
-            Random = Math.floor(Math.random() * 100)+50;
+            Random = Math.floor(Math.random() * 100) + 50;
             showRandom.innerHTML = Random;
             fifthFunction();
             break;
@@ -53,29 +59,41 @@ function clickHandler() {
     }
 
 }
-
 function firstFunction() {
-    scoreCheck.addEventListener('click', firstHandler);
+    scorebutton.addEventListener('click', firstHandler);
 }
-
 function firstHandler() {
     var firstUserNumber = Number(firstNumber.value);
     var secondUserNumber = Number(secondNumber.value);
     var thirdUserNumber = Number(thirdNumber.value);
+
     var testOne = Random + 2;
     var testTwo = Random + 4;
     var testThree = Random + 6;
+    var score = 0;
+    if (testOne === firstUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
+    if (testTwo === secondUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
+    if (testThree === thirdUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
-        resultButton.innerHTML = "✨Excellent✨ "
+        resultShow.innerHTML = "✨Excellent✨"
+        scoreShow.innerHTML = "Your Score is = " + score
     } else {
-        resultButton.innerHTML = "☹️Try Again☹️ "
+        resultShow.innerHTML = "☹️You shoud work on your Logic☹️ "
+        scoreShow.innerHTML = "Your Score is = " + score
     }
 }
-
 function secondFunction() {
-    scoreCheck.addEventListener('click', secondHandler);
+    scorebutton.addEventListener('click', secondHandler);
 }
-
 function secondHandler() {
     var firstUserNumber = Number(firstNumber.value);
     var secondUserNumber = Number(secondNumber.value);
@@ -83,17 +101,30 @@ function secondHandler() {
     var testOne = Random * 3;
     var testTwo = testOne * 3;
     var testThree = testTwo * 3;
+    var score = 0;
+    if (testOne === firstUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
+    if (testTwo === secondUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
+    if (testThree === thirdUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
-        resultButton.innerHTML = "✨Excellent✨ "
+        resultShow.innerHTML = "✨Excellent✨"
+        scoreShow.innerHTML = "Your Score is = " + score
     } else {
-        resultButton.innerHTML = "☹️Try Again☹️ "
+        resultShow.innerHTML = "☹️You shoud work on your Logic☹️ "
+        scoreShow.innerHTML = "Your Score is = " + score
     }
 }
-
 function thirdFunction() {
-    scoreCheck.addEventListener('click', thirdHandler);
+    scorebutton.addEventListener('click', thirdHandler);
 }
-
 function thirdHandler() {
     var firstUserNumber = Number(firstNumber.value);
     var secondUserNumber = Number(secondNumber.value);
@@ -101,17 +132,30 @@ function thirdHandler() {
     var testOne = Random * 4;
     var testTwo = testOne * 4;
     var testThree = testTwo * 4;
+    var score = 0;
+    if (testOne === firstUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
+    if (testTwo === secondUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
+    if (testThree === thirdUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
-        resultButton.innerHTML = "✨Excellent✨ "
+        resultShow.innerHTML = "✨Excellent✨"
+        scoreShow.innerHTML = "Your Score is = " + score
     } else {
-        resultButton.innerHTML = "☹️Try Again☹️ "
+        resultShow.innerHTML = "☹️You shoud work on your Logic☹️ "
+        scoreShow.innerHTML = "Your Score is = " + score
     }
 }
-
 function fourthFunction() {
-    scoreCheck.addEventListener('click', fourthHandler);
+    scorebutton.addEventListener('click', fourthHandler);
 }
-
 function fourthHandler() {
     var firstUserNumber = Number(firstNumber.value);
     var secondUserNumber = Number(secondNumber.value);
@@ -119,17 +163,34 @@ function fourthHandler() {
     var testOne = (Random * 9) + 2;
     var testTwo = (testOne * 9) + 2;
     var testThree = (testTwo * 9) + 2;
+    var score = 0;
+    if (testOne === firstUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
+    if (testTwo === secondUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
+    if (testThree === thirdUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
-        resultButton.innerHTML = "✨Excellent✨ "
+        resultShow.innerHTML = "✨Excellent✨"
+        scoreShow.innerHTML = "Your Score is = " + score
     } else {
-        resultButton.innerHTML = "☹️Try Again☹️ "
+        resultShow.innerHTML = "☹️You shoud work on your Logic☹️ "
+        scoreShow.innerHTML = "Your Score is = " + score
+    }
+
+    function fifthFunction() {
+        scorebutton.addEventListener('click', fifthHandler);
     }
 }
-
 function fifthFunction() {
-    scoreCheck.addEventListener('click', fifthHandler);
+    scorebutton.addEventListener('click', fifthHandler);
 }
-
 function fifthHandler() {
     var firstUserNumber = Number(firstNumber.value);
     var secondUserNumber = Number(secondNumber.value);
@@ -137,9 +198,24 @@ function fifthHandler() {
     var testOne = Random + 300;
     var testTwo = testOne + 400;
     var testThree = testTwo + 500;
+    var score = 0;
+    if (testOne === firstUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
+    if (testTwo === secondUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
+    if (testThree === thirdUserNumber) {
+        score = score + 1
+        console.log(score)
+    }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
-        resultButton.innerHTML = "✨Excellent✨ "
+        resultShow.innerHTML = "✨Excellent✨"
+        scoreShow.innerHTML = "Your Score is = " + score
     } else {
-        resultButton.innerHTML = "☹️Try Again☹️ "
+        resultShow.innerHTML = "☹️You shoud work on your Logic☹️ "
+        scoreShow.innerHTML = "Your Score is = " + score
     }
 }
