@@ -87,7 +87,7 @@ function firstHandler() {
         resultShow.innerHTML = "✨Excellent✨"
         scoreShow.innerHTML = "Your Score is = " + score
     } else {
-        resultShow.innerHTML = "☹️You shoud work on your Logic☹️ "
+        resultShow.innerHTML = "☹️You shoud work on Logic☹️ "
         scoreShow.innerHTML = "Your Score is = " + score
     }
 }
@@ -118,7 +118,7 @@ function secondHandler() {
         resultShow.innerHTML = "✨Excellent✨"
         scoreShow.innerHTML = "Your Score is = " + score
     } else {
-        resultShow.innerHTML = "☹️You shoud work on your Logic☹️ "
+        resultShow.innerHTML = "☹️You shoud work on Logic☹️ "
         scoreShow.innerHTML = "Your Score is = " + score
     }
 }
@@ -149,7 +149,7 @@ function thirdHandler() {
         resultShow.innerHTML = "✨Excellent✨"
         scoreShow.innerHTML = "Your Score is = " + score
     } else {
-        resultShow.innerHTML = "☹️You shoud work on your Logic☹️ "
+        resultShow.innerHTML = "☹️You shoud work on Logic☹️ "
         scoreShow.innerHTML = "Your Score is = " + score
     }
 }
@@ -180,7 +180,7 @@ function fourthHandler() {
         resultShow.innerHTML = "✨Excellent✨"
         scoreShow.innerHTML = "Your Score is = " + score
     } else {
-        resultShow.innerHTML = "☹️You shoud work on your Logic☹️ "
+        resultShow.innerHTML = "☹️You shoud work on Logic☹️ "
         scoreShow.innerHTML = "Your Score is = " + score
     }
 
@@ -215,7 +215,7 @@ function fifthHandler() {
         resultShow.innerHTML = "✨Excellent✨"
         scoreShow.innerHTML = "Your Score is = " + score
     } else {
-        resultShow.innerHTML = "☹️You shoud work on your Logic☹️ "
+        resultShow.innerHTML = "☹️You shoud work on Logic☹️ "
         scoreShow.innerHTML = "Your Score is = " + score
     }
 }
