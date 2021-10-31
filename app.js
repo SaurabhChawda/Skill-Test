@@ -18,6 +18,7 @@ function clickHandler() {
     secondNumber.value = "";
     thirdNumber.value = "";
     resultShow.innerHTML = "";
+    scoreShow.innerHTML = "";
     switch (randomNumber) {
         case 0: {
 
@@ -73,15 +74,12 @@ function firstHandler() {
     var score = 0;
     if (testOne === firstUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testTwo === secondUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testThree === thirdUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         resultShow.innerHTML = "✨Excellent✨"
