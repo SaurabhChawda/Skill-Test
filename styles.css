@@ -24,6 +24,7 @@ h1{
     text-align: center;
     margin: 0.5rem auto;
     display: block;
+    font-weight: bold;
 }
 #usr-series{
     margin: auto;
@@ -31,17 +32,21 @@ h1{
 
 }
 #show-random{
-    font-size: x-large;
+    font-size: larger;
+    font-weight: bold;
     display: inline;
 }
 #first-number{
-    width: 70px;   
+    width: 70px;
+    font-weight: bold;   
 }
 #second-number{
     width: 70px;
+    font-weight: bold;
 }
 #third-number{
     width: 70px;
+    font-weight: bold;
 }
 #usr-button{
     padding: 0.5rem 2rem;
@@ -62,4 +67,11 @@ h1{
     border-radius: 0.5rem;
     margin:1rem auto;
     display: block;
+}
+#result-button{
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    text-align: center;
 }
