@@ -7,9 +7,12 @@ var thirdNumber = document.querySelector("#third-number");
 var scorebutton = document.querySelector("#score-button");
 var resultShow = document.querySelector("#result-show");
 var scoreShow = document.querySelector("#score-show")
-
-
 var Random;
+var firstUserNumber;
+var secondUserNumber;
+var thirdUserNumber;
+// scorebutton.disabled = true
+
 userButton.addEventListener('click', clickHandler);
 
 function clickHandler() {
@@ -50,7 +53,7 @@ function clickHandler() {
             break;
         }
         case 4: {
-            showSeries.innerHTML = "100,400,800,1300,1800";
+            showSeries.innerHTML = "100,400,800,1300,1900";
             Random = Math.floor(Math.random() * 100) + 50;
             showRandom.innerHTML = Random;
             fifthFunction();
@@ -64,16 +67,16 @@ function firstFunction() {
     scorebutton.addEventListener('click', firstHandler);
 }
 function firstHandler() {
-    var firstUserNumber = Number(firstNumber.value);
-    var secondUserNumber = Number(secondNumber.value);
-    var thirdUserNumber = Number(thirdNumber.value);
-
+    // scorebutton.disabled = false;
+    firstUserNumber = Number(firstNumber.value);
+    secondUserNumber = Number(secondNumber.value);
+    thirdUserNumber = Number(thirdNumber.value);
     var testOne = Random + 2;
     var testTwo = Random + 4;
     var testThree = Random + 6;
     var score = 0;
     if (testOne === firstUserNumber) {
-        score = score + 1
+        score = score + 1;
     }
     if (testTwo === secondUserNumber) {
         score = score + 1
@@ -93,9 +96,10 @@ function secondFunction() {
     scorebutton.addEventListener('click', secondHandler);
 }
 function secondHandler() {
-    var firstUserNumber = Number(firstNumber.value);
-    var secondUserNumber = Number(secondNumber.value);
-    var thirdUserNumber = Number(thirdNumber.value);
+    firstUserNumber = Number(firstNumber.value);
+    secondUserNumber = Number(secondNumber.value);
+    thirdUserNumber = Number(thirdNumber.value);
+    // scorebutton.disabled = false;
     var testOne = Random * 3;
     var testTwo = testOne * 3;
     var testThree = testTwo * 3;
@@ -121,9 +125,10 @@ function thirdFunction() {
     scorebutton.addEventListener('click', thirdHandler);
 }
 function thirdHandler() {
-    var firstUserNumber = Number(firstNumber.value);
-    var secondUserNumber = Number(secondNumber.value);
-    var thirdUserNumber = Number(thirdNumber.value);
+    firstUserNumber = Number(firstNumber.value);
+    secondUserNumber = Number(secondNumber.value);
+    thirdUserNumber = Number(thirdNumber.value);
+    // scorebutton.disabled = false;
     var testOne = Random * 4;
     var testTwo = testOne * 4;
     var testThree = testTwo * 4;
@@ -149,9 +154,10 @@ function fourthFunction() {
     scorebutton.addEventListener('click', fourthHandler);
 }
 function fourthHandler() {
-    var firstUserNumber = Number(firstNumber.value);
-    var secondUserNumber = Number(secondNumber.value);
-    var thirdUserNumber = Number(thirdNumber.value);
+    firstUserNumber = Number(firstNumber.value);
+    secondUserNumber = Number(secondNumber.value);
+    thirdUserNumber = Number(thirdNumber.value);
+    // scorebutton.disabled = false;
     var testOne = (Random * 9) + 2;
     var testTwo = (testOne * 9) + 2;
     var testThree = (testTwo * 9) + 2;
@@ -181,9 +187,10 @@ function fifthFunction() {
     scorebutton.addEventListener('click', fifthHandler);
 }
 function fifthHandler() {
-    var firstUserNumber = Number(firstNumber.value);
-    var secondUserNumber = Number(secondNumber.value);
-    var thirdUserNumber = Number(thirdNumber.value);
+    firstUserNumber = Number(firstNumber.value);
+    secondUserNumber = Number(secondNumber.value);
+    thirdUserNumber = Number(thirdNumber.value);
+    // scorebutton.disabled = false;
     var testOne = Random + 300;
     var testTwo = testOne + 400;
     var testThree = testTwo + 500;
