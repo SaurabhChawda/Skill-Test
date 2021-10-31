@@ -102,15 +102,12 @@ function secondHandler() {
     var score = 0;
     if (testOne === firstUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testTwo === secondUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testThree === thirdUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         resultShow.innerHTML = "✨Excellent✨"
@@ -133,15 +130,12 @@ function thirdHandler() {
     var score = 0;
     if (testOne === firstUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testTwo === secondUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testThree === thirdUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         resultShow.innerHTML = "✨Excellent✨"
@@ -164,15 +158,12 @@ function fourthHandler() {
     var score = 0;
     if (testOne === firstUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testTwo === secondUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testThree === thirdUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         resultShow.innerHTML = "✨Excellent✨"
@@ -199,15 +190,12 @@ function fifthHandler() {
     var score = 0;
     if (testOne === firstUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testTwo === secondUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testThree === thirdUserNumber) {
         score = score + 1
-        console.log(score)
     }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         resultShow.innerHTML = "✨Excellent✨"
