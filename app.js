@@ -87,7 +87,7 @@ function firstHandler() {
         secondNumber.style.backgroundColor="Red"
     }
     if (testThree === thirdUserNumber) {
-        thirdNumber.backgroundColor="rgb(50, 245, 76)"   
+        thirdNumber.style.backgroundColor="rgb(50, 245, 76)"   
     }else{
         thirdNumber.style.backgroundColor="Red"
     }
@@ -123,7 +123,7 @@ function secondHandler() {
         secondNumber.style.backgroundColor="Red"
     }
     if (testThree === thirdUserNumber) {
-        thirdNumber.backgroundColor="rgb(50, 245, 76)"   
+        thirdNumber.style.backgroundColor="rgb(50, 245, 76)"   
     }else{
         thirdNumber.style.backgroundColor="Red"
     }
@@ -159,7 +159,7 @@ function thirdHandler() {
         secondNumber.style.backgroundColor="Red"
     }
     if (testThree === thirdUserNumber) {
-        thirdNumber.backgroundColor="rgb(50, 245, 76)"   
+        thirdNumber.style.backgroundColor="rgb(50, 245, 76)"   
     }else{
         thirdNumber.style.backgroundColor="Red"
     }
@@ -195,7 +195,7 @@ function fourthHandler() {
         secondNumber.style.backgroundColor="Red"
     }
     if (testThree === thirdUserNumber) {
-        thirdNumber.backgroundColor="rgb(50, 245, 76)"   
+        thirdNumber.style.backgroundColor="rgb(50, 245, 76)"   
     }else{
         thirdNumber.style.backgroundColor="Red"
     }
@@ -235,7 +235,7 @@ function fifthHandler() {
         secondNumber.style.backgroundColor="Red"
     }
     if (testThree === thirdUserNumber) {
-        thirdNumber.backgroundColor="rgb(50, 245, 76)"   
+        thirdNumber.style.backgroundColor="rgb(50, 245, 76)"   
     }else{
         thirdNumber.style.backgroundColor="Red"
     }
