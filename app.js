@@ -6,7 +6,6 @@ var secondNumber = document.querySelector("#second-number");
 var thirdNumber = document.querySelector("#third-number");
 var scorebutton = document.querySelector("#score-button");
 var resultShow = document.querySelector("#result-show");
-var scoreShow = document.querySelector("#score-show")
 var Random;
 var firstUserNumber;
 var secondUserNumber;
@@ -20,7 +19,9 @@ function clickHandler() {
     secondNumber.value = "";
     thirdNumber.value = "";
     resultShow.innerHTML = "";
-    scoreShow.innerHTML = "";
+    firstNumber.style.backgroundColor="";
+    secondNumber.style.backgroundColor="";
+    thirdNumber.style.backgroundColor="";
     switch (randomNumber) {
         case 0: {
 
@@ -76,13 +77,19 @@ function firstHandler() {
     var testThree = Random + 6;
     var score = 0;
     if (testOne === firstUserNumber) {
-        score = score + 1;
+        firstNumber.style.backgroundColor="rgb(50, 245, 76)"
+    }else{
+        firstNumber.style.backgroundColor="Red"
     }
     if (testTwo === secondUserNumber) {
-        score = score + 1
+        secondNumber.style.backgroundColor="rgb(50, 245, 76)"
+    }else{
+        secondNumber.style.backgroundColor="Red"
     }
     if (testThree === thirdUserNumber) {
-        score = score + 1
+        thirdNumber.backgroundColor="rgb(50, 245, 76)"   
+    }else{
+        thirdNumber.style.backgroundColor="Red"
     }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         resultShow.innerHTML = "✨Excellent✨"
@@ -106,13 +113,19 @@ function secondHandler() {
     var testThree = testTwo * 3;
     var score = 0;
     if (testOne === firstUserNumber) {
-        score = score + 1
+        firstNumber.style.backgroundColor="rgb(50, 245, 76)"
+    }else{
+        firstNumber.style.backgroundColor="Red"
     }
     if (testTwo === secondUserNumber) {
-        score = score + 1
+        secondNumber.style.backgroundColor="rgb(50, 245, 76)"
+    }else{
+        secondNumber.style.backgroundColor="Red"
     }
     if (testThree === thirdUserNumber) {
-        score = score + 1
+        thirdNumber.backgroundColor="rgb(50, 245, 76)"   
+    }else{
+        thirdNumber.style.backgroundColor="Red"
     }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         resultShow.innerHTML = "✨Excellent✨"
@@ -136,13 +149,19 @@ function thirdHandler() {
     var testThree = testTwo * 4;
     var score = 0;
     if (testOne === firstUserNumber) {
-        score = score + 1
+        firstNumber.style.backgroundColor="rgb(50, 245, 76)"
+    }else{
+        firstNumber.style.backgroundColor="Red"
     }
     if (testTwo === secondUserNumber) {
-        score = score + 1
+        secondNumber.style.backgroundColor="rgb(50, 245, 76)"
+    }else{
+        secondNumber.style.backgroundColor="Red"
     }
     if (testThree === thirdUserNumber) {
-        score = score + 1
+        thirdNumber.backgroundColor="rgb(50, 245, 76)"   
+    }else{
+        thirdNumber.style.backgroundColor="Red"
     }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         resultShow.innerHTML = "✨Excellent✨"
@@ -166,13 +185,19 @@ function fourthHandler() {
     var testThree = (testTwo * 9) + 2;
     var score = 0;
     if (testOne === firstUserNumber) {
-        score = score + 1
+        firstNumber.style.backgroundColor="rgb(50, 245, 76)"
+    }else{
+        firstNumber.style.backgroundColor="Red"
     }
     if (testTwo === secondUserNumber) {
-        score = score + 1
+        secondNumber.style.backgroundColor="rgb(50, 245, 76)"
+    }else{
+        secondNumber.style.backgroundColor="Red"
     }
     if (testThree === thirdUserNumber) {
-        score = score + 1
+        thirdNumber.backgroundColor="rgb(50, 245, 76)"   
+    }else{
+        thirdNumber.style.backgroundColor="Red"
     }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         resultShow.innerHTML = "✨Excellent✨"
@@ -200,13 +225,19 @@ function fifthHandler() {
     var testThree = testTwo + 500;
     var score = 0;
     if (testOne === firstUserNumber) {
-        score = score + 1
+        firstNumber.style.backgroundColor="rgb(50, 245, 76)"
+    }else{
+        firstNumber.style.backgroundColor="Red"
     }
     if (testTwo === secondUserNumber) {
-        score = score + 1
+        secondNumber.style.backgroundColor="rgb(50, 245, 76)"
+    }else{
+        secondNumber.style.backgroundColor="Red"
     }
     if (testThree === thirdUserNumber) {
-        score = score + 1
+        thirdNumber.backgroundColor="rgb(50, 245, 76)"   
+    }else{
+        thirdNumber.style.backgroundColor="Red"
     }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         resultShow.innerHTML = "✨Excellent✨"
