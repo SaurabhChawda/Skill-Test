@@ -10,6 +10,9 @@ var Random;
 var firstUserNumber;
 var secondUserNumber;
 var thirdUserNumber;
+var testOne;
+var testTwo;
+var testThree;
 scorebutton.disabled = true;
 userButton.addEventListener('click', clickHandler);
 
@@ -67,163 +70,59 @@ function firstFunction() {
     scorebutton.disabled = false;
     scorebutton.addEventListener('click', firstHandler);
 }
-function firstHandler() {
-    
-    firstUserNumber = Number(firstNumber.value);
-    secondUserNumber = Number(secondNumber.value);
-    thirdUserNumber = Number(thirdNumber.value);
+function firstHandler() { 
+    inputHandler();
     var testOne = Random + 2;
     var testTwo = Random + 4;
     var testThree = Random + 6;
-    var score = 0;
-    if (testOne === firstUserNumber) {
-        firstNumber.style.backgroundColor="rgb(50, 245, 76)"
-    }else{
-        firstNumber.style.backgroundColor="Red"
-    }
-    if (testTwo === secondUserNumber) {
-        secondNumber.style.backgroundColor="rgb(50, 245, 76)"
-    }else{
-        secondNumber.style.backgroundColor="Red"
-    }
-    if (testThree === thirdUserNumber) {
-        thirdNumber.style.backgroundColor="rgb(50, 245, 76)"   
-    }else{
-        thirdNumber.style.backgroundColor="Red"
-    }
-    if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
-        resultShow.innerHTML = "✨Excellent✨"
-        scoreShow.innerHTML = "Your Score is " + score
-    } else {
-        resultShow.innerHTML = "☹️You should work on Logic☹️ "
-        scoreShow.innerHTML = "Your Score is " + score
-    }
+    Result(testOne,testTwo,testThree); 
 }
 function secondFunction() {
+
     scorebutton.disabled = false;
     scorebutton.addEventListener('click', secondHandler);
 }
-function secondHandler() {
-    firstUserNumber = Number(firstNumber.value);
-    secondUserNumber = Number(secondNumber.value);
-    thirdUserNumber = Number(thirdNumber.value);
-    
+function secondHandler() { 
+    inputHandler();
     var testOne = Random * 3;
     var testTwo = testOne * 3;
     var testThree = testTwo * 3;
-    var score = 0;
-    if (testOne === firstUserNumber) {
-        firstNumber.style.backgroundColor="rgb(50, 245, 76)"
-    }else{
-        firstNumber.style.backgroundColor="Red"
-    }
-    if (testTwo === secondUserNumber) {
-        secondNumber.style.backgroundColor="rgb(50, 245, 76)"
-    }else{
-        secondNumber.style.backgroundColor="Red"
-    }
-    if (testThree === thirdUserNumber) {
-        thirdNumber.style.backgroundColor="rgb(50, 245, 76)"   
-    }else{
-        thirdNumber.style.backgroundColor="Red"
-    }
-    if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
-        resultShow.innerHTML = "✨Excellent✨"
-        scoreShow.innerHTML = "Your Score is " + score
-    } else {
-        resultShow.innerHTML = "☹️You should work on Logic☹️ "
-        scoreShow.innerHTML = "Your Score is " + score
-    }
+    Result(testOne,testTwo,testThree); 
 }
 function thirdFunction() {
     scorebutton.disabled = false;
     scorebutton.addEventListener('click', thirdHandler);
 }
 function thirdHandler() {
-    firstUserNumber = Number(firstNumber.value);
-    secondUserNumber = Number(secondNumber.value);
-    thirdUserNumber = Number(thirdNumber.value);
-    
+    inputHandler();
     var testOne = Random * 4;
     var testTwo = testOne * 4;
     var testThree = testTwo * 4;
-    var score = 0;
-    if (testOne === firstUserNumber) {
-        firstNumber.style.backgroundColor="rgb(50, 245, 76)"
-    }else{
-        firstNumber.style.backgroundColor="Red"
+    Result(testOne,testTwo,testThree); 
     }
-    if (testTwo === secondUserNumber) {
-        secondNumber.style.backgroundColor="rgb(50, 245, 76)"
-    }else{
-        secondNumber.style.backgroundColor="Red"
-    }
-    if (testThree === thirdUserNumber) {
-        thirdNumber.style.backgroundColor="rgb(50, 245, 76)"   
-    }else{
-        thirdNumber.style.backgroundColor="Red"
-    }
-    if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
-        resultShow.innerHTML = "✨Excellent✨"
-        scoreShow.innerHTML = "Your Score is " + score
-    } else {
-        resultShow.innerHTML = "☹️You should work on Logic☹️ "
-        scoreShow.innerHTML = "Your Score is " + score
-    }
-}
 function fourthFunction() {
     scorebutton.disabled = false;
     scorebutton.addEventListener('click', fourthHandler);
 }
 function fourthHandler() {
-    firstUserNumber = Number(firstNumber.value);
-    secondUserNumber = Number(secondNumber.value);
-    thirdUserNumber = Number(thirdNumber.value);
-    
+    inputHandler();
     var testOne = (Random * 9) + 2;
     var testTwo = (testOne * 9) + 2;
     var testThree = (testTwo * 9) + 2;
-    var score = 0;
-    if (testOne === firstUserNumber) {
-        firstNumber.style.backgroundColor="rgb(50, 245, 76)"
-    }else{
-        firstNumber.style.backgroundColor="Red"
-    }
-    if (testTwo === secondUserNumber) {
-        secondNumber.style.backgroundColor="rgb(50, 245, 76)"
-    }else{
-        secondNumber.style.backgroundColor="Red"
-    }
-    if (testThree === thirdUserNumber) {
-        thirdNumber.style.backgroundColor="rgb(50, 245, 76)"   
-    }else{
-        thirdNumber.style.backgroundColor="Red"
-    }
-    if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
-        resultShow.innerHTML = "✨Excellent✨"
-        scoreShow.innerHTML = "Your Score is " + score
-    } else {
-        resultShow.innerHTML = "☹️You should work on Logic☹️ "
-        scoreShow.innerHTML = "Your Score is " + score
-    }
-
-    function fifthFunction() {
-        scorebutton.addEventListener('click', fifthHandler);
-    }
+    Result(testOne,testTwo,testThree); 
 }
 function fifthFunction() {
     scorebutton.disabled = false;
     scorebutton.addEventListener('click', fifthHandler);
 }
 function fifthHandler() {
-    firstUserNumber = Number(firstNumber.value);
-    secondUserNumber = Number(secondNumber.value);
-    thirdUserNumber = Number(thirdNumber.value);
-    
+    inputHandler();
     var testOne = Random + 300;
     var testTwo = testOne + 400;
     var testThree = testTwo + 500;
-    var score = 0;
+    Result(testOne,testTwo,testThree);    
+}
+function Result(testOne,testTwo,testThree){
     if (testOne === firstUserNumber) {
         firstNumber.style.backgroundColor="rgb(50, 245, 76)"
     }else{
@@ -241,9 +140,12 @@ function fifthHandler() {
     }
     if (testOne === firstUserNumber && testTwo === secondUserNumber && testThree === thirdUserNumber) {
         resultShow.innerHTML = "✨Excellent✨"
-        scoreShow.innerHTML = "Your Score is " + score
     } else {
         resultShow.innerHTML = "☹️You should work on Logic☹️ "
-        scoreShow.innerHTML = "Your Score is " + score
     }
+}
+function inputHandler(){
+    firstUserNumber = Number(firstNumber.value);
+    secondUserNumber = Number(secondNumber.value);
+    thirdUserNumber = Number(thirdNumber.value);
 }
